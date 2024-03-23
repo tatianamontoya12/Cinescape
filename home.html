@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineEscape</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="cont-home">
+
+        <div id="panel-Lateral">
+            <img onclick="panelLateral()" src="img/menu.png" alt="logo">
+            <h2>Editar Mi cuenta</h2>
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Aventura</a>
+                <a href="#">Animadas</a>
+                <a href="#">Drama</a>
+                <a href="#">Comedia</a>
+                <a href="#">Ficción</a>
+                <a href="#">Nacionales</a>
+            </ul>
+
+            <a class="cerrarSesion" href="">Cerrar Sesión</a>
+        </div>
+
+        <div class="header">
+            <img onclick="panelLateral()" src="img/menu.png" alt="logo">
+            <a href=""><img src="img/icon-logo.png" alt=""></a>
+            <a href=""><img src="img/user.png" alt=""></a>
+        </div>
+        
+        <div class="filtros">
+            <button class="active">Aventuras</button>
+            <button>Animales</button>
+            <button>Drama</button>
+        </div>
+
+        <p id="copy-categori">Peliculas y series en Cinescape </p>
+        
+        <div id="cont-aventuras">
+            <h2>Estrenos</h2>
+            <hr>
+
+            <div class="cont-caratulas">
+                <div class="caratulas" onclick="openModal(this)" 
+                data-titulo="wonka" 
+                data-estreno="08-mayo-2024" data-genero="Fantacia,ficción" 
+                data-descripcion="Una película se sumergue en un mundo de chocolate y aventura">
+                <img src="img/wonka_drama.jpg" alt="">
+            </div>
+
+            <div class="caratulas" onclick="openModal(this)"
+                data-titulo="chicken" data-estreno="30-marzo-2018" data-genero="Animacion,ventura"
+                data-descripcion="Pelicula de aventura,divercion y comedia .">
+                <img src="img/chicken_run_dawn_of_the_nugget_ver9.jpg" alt="">
+            </div>
+
+            <div class="caratulas" onclick="openModal(this)" 
+             data-titulo="Trolls 3" data-estreno="25-noviembre-2020" 
+             data-genero="Fantasía" data-descripcion="Serie animada de aventura">
+             <img src="img/Trolls_3.jpg" alt=""></div>
+            </div>
+
+            
+            <br>
+            <div id="cont-caratuas">
+                <h2>Proximamente</h2>
+            <hr>
+            <div class="cont-caratulas">
+                <div class="caratulas" onclick="openModal(this)"
+                 data-titulo="oppenheimer" data-estreno="Noviembre-31-2024" 
+                 data-genero="Drama" data-descripcion="Una película dramática y de ficción lleno de acertijos y descubrimientos.">
+                 <img src="img/oppenheimer_drama.jpg" alt="">
+                </div>
+
+                <div class="caratulas" onclick="openModal(this)" 
+                 data-titulo="shazam2" data-estreno="Enero-29-2024" data-genero="Acción, Ciencia ficción"
+                 data-descripcion="Una película de acción basada en el superhéroe de Comics.">
+                 <img src="img/shazam2.jpg" alt="">
+                </div>
+
+                <div class="caratulas" onclick="openModal(this)" 
+                 data-titulo="megalodon" data-estreno="Agosto-04-2024" data-genero="Fantasía, Aventura"
+                 data-descripcion="Película de aventuras y accion realizada en el mar.">
+                 <img src="img/megalodon.jpg" alt="">
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div id="modal-pelicula" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" src="" alt="">
+            <div class="modal-description">
+                <h2>Titulo de la película</h2>
+                <p>Estreno: fecha</p>
+                <p>Género: </p>
+                <p>Descripción: </p>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
